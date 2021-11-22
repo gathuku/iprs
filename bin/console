@@ -11,5 +11,8 @@ require "iprs"
 # require "pry"
 # Pry.start
 
+client = Iprs::Client.new(log: ENV("LOG"), pass: ENV("PASS"))
+
+
 require "irb"
 IRB.start(__FILE__)

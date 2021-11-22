@@ -3,6 +3,10 @@
 require_relative "iprs/version"
 
 module Iprs
-  class Error < StandardError; end
-  # Your code goes here...
+  autoload :Error, "iprs/error"
+  autoload :Client, "iprs/client"
+  autoload :Envelope, "iprs/envelope"
+  autoload :Resource, "iprs/resource"
+
+  autoload :Login, "iprs/resources/login"
 end

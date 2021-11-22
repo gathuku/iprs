@@ -22,7 +22,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Client initialization
+
+```
+client = Iprs::Client.new(log: ENV("LOG"), pass: ENV("PASS"))
+```
+
+Login
+
+```
+res = client.login
+```
 
 ## Development
 
